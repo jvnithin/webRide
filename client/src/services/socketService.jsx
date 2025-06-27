@@ -28,7 +28,7 @@ class SocketSingleton {
   getSocket(role) {
     // const {apiUrl} = useContext(MapContext);
     if (!this.socket) {
-      this.socket = io(`http://localhost:8001`, {
+      this.socket = io(`https://webride-server.onrender.com`, {
         autoConnect: true,
         // auth: { token: 'your-auth-token' }, // optional
       });
